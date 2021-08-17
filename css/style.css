@@ -185,6 +185,18 @@ img{
 
 /* quality*/
 
+.quality-box-icon{
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+
 .quality {
   display: flex;
 }
@@ -242,6 +254,40 @@ img{
   margin-right: 30px;
 }
 
+/* __________TEAM____________*/
+
+
+.icon-border{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-border:hover, 
+.icon-border:focus{
+  background-color: var(--color-blue);
+}
+
+.icon-border:hover .team-icon,
+.icon-border:focus .team-icon{
+  fill: var(--color-white);
+}
+
+/* .team-icon:hover,
+.team-icon:focus{
+  fill: var(--color-blue);
+} */
+
+
+.cont-icon{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 32px 0px 32px;
+}
+
 .team {
   background-color: #f5f4fa;
   border-radius: 0px;
@@ -270,7 +316,9 @@ img{
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
+  padding-bottom: 30px;
 }
+
 
 .box-team:not(:last-child){
   margin-right: 30px;
@@ -278,7 +326,7 @@ img{
 
 .our-team-box{
   padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .name-team {
