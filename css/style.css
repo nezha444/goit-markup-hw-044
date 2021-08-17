@@ -1,8 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Raleway', ;
 }
 
 :root{
@@ -16,6 +14,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   color: var(--color-black);
+  font-family: 'Roboto', 'Raleway', sans-serif;
 }
 
 ul {
@@ -65,17 +64,12 @@ img{
 
 .header {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
   align-items: center;
 }
 
 .main-header {
   background-color: var(--color-white);
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  border: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .ul-nav {
@@ -94,30 +88,42 @@ img{
 }
 
 .raleway{
-  font-family: 'Raleway';
+  font-family: 'Raleway' ;
 }
 
 .studio {
-  margin-right: 50px;
+  display: block;
   font-weight: bold;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .portfolio {
-  margin-right: 50px;
+  display: block;
   font-weight: bold;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts{
+  display: block;
   font-weight: bold;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .mail {
+  display: block;
   font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .tel{
+  display: block;
   font-weight: 500;
-  margin: 0 0 0 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .mail-tel{
@@ -128,17 +134,23 @@ img{
 
 .container-nav{
   display: flex;
-
 }
 
+.header-item:not(:last-child){
+  margin-right: 50px;
+}
+
+.item-link-header{
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
 
 /* MAIN */
 
 .banner {
-  display: flex;
-  justify-content: center;
   background: #2f303a;
   padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 .banner-text {
@@ -148,9 +160,8 @@ img{
   text-align: center;
   letter-spacing: 0.06em;
   max-width: 696px;
-  padding-bottom: 30px;
   margin: 0 auto;
-  padding-top: 200px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -162,8 +173,6 @@ img{
   cursor: pointer;
   display: block;
   margin: 0 auto;
-
-  
 }
 
 .text-button {
@@ -178,11 +187,14 @@ img{
 
 .quality {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 94px 215px 94px 215px;
 }
+
+.main-quality{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  
+}
+
 
 .quality-name {
   text-transform: uppercase;
@@ -199,28 +211,21 @@ img{
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  width: 270px;
-  height: 75px;
-  left: 215px;
-  top: 800px;
 }
 
-.quality-box {
+.quality-box:not(:last-child) {
   margin-right: 30px;
+}
+.quality-box{
+  width: 270px;
 }
 
 .doing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .doing-pic {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .doing-text {
@@ -233,41 +238,47 @@ img{
   margin-bottom: 50px;
 }
 
-.doing-img {
-
+.doing-img:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team {
   background-color: #f5f4fa;
   border-radius: 0px;
   padding-bottom: 95px;
+  padding-top: 94px;
 }
 
 .our-team {
-  font-weight: 700;
+  text-align: center;
+  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-black);
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
 .team-container {
   display: flex;
-  justify-content: space-between;
+
 }
 
 .box-team {
-  height: 368px;
-  width: 270px;
-  left: 215px;
-  top: 1635px;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 270px;
+}
+
+.box-team:not(:last-child){
+  margin-right: 30px;
+}
+
+.our-team-box{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .name-team {
@@ -277,11 +288,10 @@ img{
   line-height: 19px;
   letter-spacing: 0.03em;
   text-align: center;
-  padding: 30px 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .profession-team {
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -310,6 +320,10 @@ img{
   margin: 60px 0 0 0px;
 }
 
+.white{
+  color: var(--color-white);
+}
+
 .logo {
   color: var(--color-white);
   font-weight: bold;
@@ -328,6 +342,10 @@ img{
   font-size: 14px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item:not(:last-child){
+  margin-bottom: 9px;
 }
 
 .address-tel {

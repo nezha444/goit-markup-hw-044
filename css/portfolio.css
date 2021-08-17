@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Raleway', ;
+  font-family: 'Roboto', 'Raleway', sans-serif;
 }
 
 :root{
@@ -65,8 +64,6 @@ img{
 
 .header {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
   align-items: center;
 }
 
@@ -75,7 +72,7 @@ img{
   display: flex;
   justify-content: start;
   align-items: center;
-  border: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .ul-nav {
@@ -94,30 +91,42 @@ img{
 }
 
 .raleway{
-  font-family: 'Raleway';
+  font-family: 'Raleway' ;
 }
 
 .studio {
-  margin-right: 50px;
+  display: block;
   font-weight: bold;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .portfolio {
-  margin-right: 50px;
+  display: block;
   font-weight: bold;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts{
+  display: block;
   font-weight: bold;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .mail {
+  display: block;
   font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .tel{
+  display: block;
   font-weight: 500;
-  margin: 0 0 0 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .mail-tel{
@@ -128,21 +137,26 @@ img{
 
 .container-nav{
   display: flex;
-
 }
 
+.header-item:not(:last-child){
+  margin-right: 50px;
+}
+
+.item-link-header{
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
 /* MAIN */
 
 .container-button{
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
   margin-bottom: 50px;
 }
 
 .main{
-  margin: 94px 0 94px 0;
+  padding: 94px 0 94px 0;
 }
 
 .text-button{
@@ -154,14 +168,15 @@ img{
 
 .button{
   padding: 6px 22px;
-  background-color: var(--color-grey-light);
+  background-color: #F5F4FA;
   border-radius: 4px;
   border: none;
-  margin-right: 8px;
   cursor: pointer;
 }
 
-
+.btn-item:not(:last-child){
+  margin-right: 8px;
+}
 
 .button-fover-focus{
   background-color: var(--color-blue);
@@ -183,16 +198,20 @@ img{
 
 .container-project{
   display: flex;
-  flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+
+.project{
+  box-sizing: border-box;
 }
 
 .project{
   margin-bottom: 30px;
-  box-sizing: border-box;
   margin-left: 30px;
+  width: 370px;
 }
 
 .project-name{
@@ -201,8 +220,9 @@ img{
   font-size: 18px;
   line-height: 36px;
   color: var(--color-black);
+  margin-bottom: 4px;
 }
-
+ 
 .project-text{
   letter-spacing: 0.03em;
   color: var(--color-grey);
@@ -242,6 +262,10 @@ img{
   margin: 60px 0 0 0px;
 }
 
+.white{
+  color: var(--color-white);
+}
+
 .logo {
   color: var(--color-white);
   font-weight: bold;
@@ -260,6 +284,10 @@ img{
   font-size: 14px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item:not(:last-child){
+  margin-bottom: 9px;
 }
 
 .address-tel {

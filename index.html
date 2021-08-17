@@ -8,29 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="main-header">
       <div class="container container-nav">
         <nav class="header">
-          <a href="" class="webstudio raleway black"><span class="blue raleway">Web</span>Studio</a>
+          <a href="/" class="webstudio raleway black"><span class="blue raleway">Web</span>Studio</a>
           <ul class="ul-nav">
-            <li>
-              <a class="blue link studio" href="/">Студия<i class="far fa-hand-pointer"></i></a>
+            <li class="header-item">
+              <a class="blue link studio item-link-header" href="/">Студия</a>
             </li>
 
-            <li>
-              <a class="link portfolio black" href="./portfolio.html">Портфолио</a>
+            <li class="header-item">
+              <a class="link portfolio black item-link-header" href="./portfolio.html">Портфолио</a>
             </li>
 
-            <li><a class="link contacts black" href="/">Контакты</a></li>
+            <li class="header-item"><a class="link contacts black item-link-header" href="/">Контакты</a></li>
           </ul>
         </nav>
+
         <ul class="mail-tel">
-          <li><a class="link grey mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="tel link grey" href="tel:+380961111111">+38 096 111 11 11</a></li>
+
+          <li class="header-item">
+            <a class="link grey mail item-link-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+
+          <li class="header-item">
+            <a class="tel link grey item-link-header" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+
         </ul>
       </div>
     </header>
@@ -87,15 +95,15 @@
         <div class="container">
           <h2 class="doing-text">Чем мы занимаемся</h2>
           <ul class="doing-pic">
-            <li class="doing-img">
+            <li class="doing-img" width="370">
               <img src="img/box1.png" alt="img" width="370" />
             </li>
 
-            <li class="doing-img">
+            <li class="doing-img" width="370">
               <img src="img/box2.png" alt="img" width="370" />
             </li>
             
-            <li class="doing-img">
+            <li class="doing-img" width="370">
               <img src="img/box3.png" alt="img" width="370" />
             </li>
           </ul>
@@ -108,26 +116,34 @@
           <ul class="team-container">
             <li class="box-team">
               <img src="img/img.jpg" alt="img" width="270" />
-              <h3 class="name-team">Игорь Демьяненко</h3>
-              <p class="profession-team">Product Designer</p>
+              <div class="our-team-box">
+                <h3 class="name-team">Игорь Демьяненко</h3>
+                <p class="profession-team">Product Designer</p>
+              </div>
             </li>
 
             <li class="box-team">
               <img src="img/img1.jpg" alt="img" width="270" />
-              <h3 class="name-team">Ольга Репина</h3>
-              <p class="profession-team">Frontend Developer</p>
+              <div class="our-team-box">
+                <h3 class="name-team">Ольга Репина</h3>
+                <p class="profession-team">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="box-team">
               <img src="img/img2.jpg" alt="img" width="270" />
-              <h3 class="name-team">Николай Тарасов</h3>
-              <p class="profession-team">Marketing</p>
+              <div class="our-team-box">
+                <h3 class="name-team">Николай Тарасов</h3>
+                <p class="profession-team">Marketing</p>
+              </div>
             </li>
 
             <li class="box-team">
               <img src="img/img3.jpg" alt="img" width="270" />
-              <h3 class="name-team">Михаил Ермаков</h3>
-              <p class="profession-team">UI Designer</p>
+              <div class="our-team-box">
+                <h3 class="name-team">Михаил Ермаков</h3>
+                <p class="profession-team">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -136,16 +152,16 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="logo raleway" href="/"><span class="blue raleway">Web</span>Studio</a>
+        <a href="/" class="webstudio raleway white"><span class="blue raleway">Web</span>Studio</a>
         <address class="address">
           <ul class="address-container">
-            <li>
+            <li class="footer-item">
               <a class="link location" href="">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li>
+            <li class="footer-item">
               <a class="link address-mail" href="">info@example.com</a>
             </li>
-            <li>
+            <li class="footer-item">
               <a class="link address-tel" href="">+38 099 111 11 11</a>
             </li>
           </ul>
