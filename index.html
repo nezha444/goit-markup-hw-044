@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -51,7 +51,7 @@
       <section class="banner">
         <div class="container">
           <h1 class="banner-text">Эффективные решения для вашего бизнеса</h1>
-          <button class="button" type="button">
+          <button class="button" type="button" data-modal-open>
             <span class="text-button">Заказать услугу</span>
           </button>
         </div>
@@ -112,15 +112,24 @@
           <h2 class="doing-text">Чем мы занимаемся</h2>
           <ul class="doing-pic">
             <li class="doing-img" width="370">
-              <img src="img/box1.png" alt="img" width="370" />
+              <div class="doing-cont">
+                <img src="img/box1.png" alt="img" width="370" />
+                <p class="doing-text-cont">Десктопные приложения</p>
+              </div>
             </li>
 
             <li class="doing-img" width="370">
-              <img src="img/box2.png" alt="img" width="370" />
+              <div class="doing-cont">
+                <img src="img/box2.png" alt="img" width="370" />
+                <p class="doing-text-cont">Мобильные приложения</p>
+              </div>
             </li>
             
             <li class="doing-img" width="370">
-              <img src="img/box3.png" alt="img" width="370" />
+              <div class="doing-cont">
+                <img src="img/box3.png" alt="img" width="370" />
+                <p class="doing-text-cont">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -135,25 +144,30 @@
               <div class="our-team-box">
                 <h3 class="name-team">Игорь Демьяненко</h3>
                 <p class="profession-team">Product Designer</p>
+                <ul class="cont-icon">
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-             
-              <ul class="cont-icon">
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
-                </a>
-              </ul>
 
             </li>
 
@@ -162,51 +176,63 @@
               <div class="our-team-box">
                 <h3 class="name-team">Ольга Репина</h3>
                 <p class="profession-team">Frontend Developer</p>
+                <ul class="cont-icon">
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-
-              <ul class="cont-icon">
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
-                </a>
-              </ul>
             </li>
+
 
             <li class="box-team">
               <img src="img/img2.jpg" alt="img" width="270" />
               <div class="our-team-box">
                 <h3 class="name-team">Николай Тарасов</h3>
                 <p class="profession-team">Marketing</p>
+                <ul class="cont-icon">
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
 
-              <ul class="cont-icon">
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
-                </a>
-              </ul>
             </li>
 
             <li class="box-team">
@@ -214,25 +240,31 @@
               <div class="our-team-box">
                 <h3 class="name-team">Михаил Ермаков</h3>
                 <p class="profession-team">UI Designer</p>
+                <ul class="cont-icon">
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="icon-border">
+                      <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
 
-              <ul class="cont-icon">
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
-                </a>
-
-                <a href="" class="icon-border">
-                  <svg class="team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
-                </a>
-              </ul>
             </li>
           </ul>
         </div>
@@ -242,12 +274,12 @@
         <div class="container">
           <h3 class="my-clients">Постоянные клиенты</h3>
           <ul class="clients-cont-icon">
-            <li class="clients-icon-box"><a href=""><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group"></use></svg></a></li>
-            <li class="clients-icon-box"><a href=""><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-1"></use></svg></a></li>
-            <li class="clients-icon-box"><a href=""><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-2"></use></svg></a></li>
-            <li class="clients-icon-box"><a href=""><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-3"></use></svg></a></li>
-            <li class="clients-icon-box"><a href=""><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-4"></use></svg></a></li>
-            <li class="clients-icon-box"><a href=""><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-5"></use></svg></a></li>
+            <li class="clients-icon-box"><a href="" class="clients-icon-link"><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group"></use></svg></a></li>
+            <li class="clients-icon-box"><a href="" class="clients-icon-link"><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-1"></use></svg></a></li>
+            <li class="clients-icon-box"><a href="" class="clients-icon-link"><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-2"></use></svg></a></li>
+            <li class="clients-icon-box"><a href="" class="clients-icon-link"><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-3"></use></svg></a></li>
+            <li class="clients-icon-box"><a href="" class="clients-icon-link"><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-4"></use></svg></a></li>
+            <li class="clients-icon-box"><a href="" class="clients-icon-link"><svg width="106" height="60" class="clients-icon"><use xlink:href="./img/icons.svg#icon-group-5"></use></svg></a></li>
           </ul>
         </div>
       </section>
@@ -275,24 +307,38 @@
         <div class="my-social-link">
           <p class="sosial-text">Присоединяйтесь</p>
           <ul class="footer-cont-icon">
-                <a href="" class="footer-icon-border">
-                  <svg class="footer-team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
-                </a>
-
-                <a href="" class="footer-icon-border">
-                  <svg class="footer-team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
-                </a>
-
-                <a href="" class="footer-icon-border">
-                  <svg class="footer-team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
-                </a>
-
-                <a href="" class="footer-icon-border">
-                  <svg class="footer-team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
-                </a>
-              </ul>
+            <li class="footer-item-icon">
+              <a href="" class="footer-icon-border">
+                <svg class="footer-team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-instagram-2"></use></svg>
+              </a>
+            </li>
+            <li class="footer-item-icon">
+              <a href="" class="footer-icon-border">
+                <svg class="footer-team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-twitter-1"></use></svg>
+              </a>
+            </li>
+            <li class="footer-item-icon">
+              <a href="" class="footer-icon-border">
+                <svg class="footer-team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-facebook-1"></use></svg>
+              </a>
+            </li>
+            <li class="footer-item-icon">
+              <a href="" class="footer-icon-border">
+                <svg class="footer-team-icon" width="20" height="20"><use xlink:href="./img/icons.svg#icon-linkedin-1"></use></svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class=" data-modal-close close-btn-modal-window">
+          <svg class="icon-close"><use xlink:href="./img/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
