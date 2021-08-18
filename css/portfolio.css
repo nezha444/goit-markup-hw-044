@@ -274,6 +274,7 @@ img{
   position: relative;
   overflow: hidden;
   text-decoration: none;
+  display: block;
 }
 
 .window-text-pic:hover,
