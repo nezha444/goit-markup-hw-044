@@ -527,7 +527,6 @@ img{
 
 .footer-cont-icon{
   display: flex;
-  align-items: baseline;
 }
 
 .footer-item-icon:not(:last-child){
@@ -579,6 +578,7 @@ img{
 
 .footer-cont{
   display: flex;
+  align-items: baseline;
 }
 
 /*~~~~~~~~MODAL~~~~~~~~~~*/
