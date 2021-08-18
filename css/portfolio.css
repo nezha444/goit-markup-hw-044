@@ -276,8 +276,8 @@ img{
   text-decoration: none;
 }
 
-.project:hover,
-.project:focus{
+.window-text-pic:hover,
+.window-text-pic:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -407,6 +407,7 @@ img{
   text-transform: uppercase;
   color: var(--color-white);
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .my-social-link{
