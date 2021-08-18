@@ -8,6 +8,7 @@
   --color-white: #fff;
   --color-grey: #757575;
   --color-black: #212121;
+  --color-grey-icon: #AFB1B8;
 }
 
 body {
@@ -117,6 +118,16 @@ img{
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.mail:hover .mail-tel-icon, 
+.mail:focus .mail-tel-icon{
+  fill: var(--color-blue)
+}
+
+.tel:hover .mail-tel-icon, 
+.tel:focus .mail-tel-icon{
+  fill: var(--color-blue)
 }
 
 .tel{
@@ -276,11 +287,9 @@ img{
   fill: var(--color-white);
 }
 
-/* .team-icon:hover,
-.team-icon:focus{
-  fill: var(--color-blue);
-} */
-
+.team-icon{
+  fill: var(--color-grey-icon)
+}
 
 .cont-icon{
   display: flex;
@@ -347,6 +356,55 @@ img{
   color: var(--color-grey);
 }
 
+/* ___________CLIENTS____________*/
+
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.my-clients{
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+
+.clients-cont-icon{
+  display: flex;
+  justify-content: center
+}
+
+.clients-icon-box{
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--color-grey-icon);
+}
+
+.clients-icon-box:hover .clients-icon, 
+.clients-icon-box:focus .clients-icon{
+  fill: var(--color-blue);
+}
+
+.clients-icon-box:hover, 
+.clients-icon-box:focus{
+  border-color: var(--color-blue);
+}
+
+.clients-icon-box:not(:last-child){
+  margin-right: 30px;
+}
+
+.clients-icon{
+  fill: var(--color-grey-icon);
+}
+
 .footer {
   background-color: #2f303a;
   display: flex;
@@ -400,4 +458,51 @@ img{
   font-size: 14px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-cont-icon{
+  display: flex;
+}
+
+.footer-cont-icon:not(:last-child){
+  margin-right: 10px;
+}
+
+.footer-icon-border{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.footer-team-icon{
+  fill: var(--color-white);
+}
+
+.footer-icon-border:hover, .footer-icon-border:focus{
+  background-color: var(--color-blue);
+}
+
+.footer-icon-border{
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.sosial-text{
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.my-social-link{
+  margin-left: 70px;
+}
+
+.footer-cont{
+  display: flex;
 }
