@@ -331,12 +331,53 @@
         </div>
       </div>
     </footer>
-
-    <div class="backdrop is-hidden" data-modal>
+                    is-hidden
+    <div class="backdrop   " data-modal>
       <div class="modal">
         <button type="button" data-modal-close class=" data-modal-close close-btn-modal-window">
           <svg class="icon-close"><use xlink:href="./img/icons.svg#icon-close"></use></svg>
         </button>
+        <form class="form">
+          <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-cont">
+            <ul class="form-cont-box">
+              <li class="form-item-margin">
+                <label class="label-name-for-input" for="">Имя</label>
+                  <span class="form-cont-box-item">
+                    <input class="form-input" type="text" name="name" id="" required pattern="[a-zA-Zа-яёА-ЯЁ]+" minlength="2" title="" autofocus >
+                    <svg class="input-icon"><use xlink:href="./img/icons.svg#icon-person-black-18dp-1"></use></svg>
+                  </span>
+              </li> 
+              <li class="form-item-margin">
+                <label class="label-name-for-input" for="">Телефон</label>
+                  <span class="form-cont-box-item">
+                    <input class="form-input" type="tel" name="tel" id="" required pattern="[0-9+]+" maxlength="14" title="" >
+                    <svg class="input-icon"><use xlink:href="./img/icons.svg#icon-phone-black-18dp-1"></use></svg>
+                  </span>
+              </li>
+              <li class="form-item-margin">
+                <label class="label-name-for-input" for="">Почта</label>
+                  <span class="form-cont-box-item">
+                    <input class="form-input" type="email" name="email" id="" required minlength="2" title="" >
+                    <svg class="input-icon"><use xlink:href="./img/icons.svg#icon-email-black-18dp-1"></use></svg>
+                  </span>
+              </li>
+            
+              <li>
+                <span class="form-cont-box-item">
+                  <label class="label-name-for-input" for="">Комментарий</label>
+                  <textarea class="textarea" name="" id="" placeholder="Введите текст" ></textarea>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-checkbox-accept">
+            <input class="form-checkbox" type="checkbox" name="checkbox" id="accept-checkbox">
+            <label for="accept-checkbox" class="text-accept">Соглашаюсь с рассылкой и принимаю <a class="text-accept-link" href="">Условия договора</a></label>
+          </div>
+          <button class="button" type="submit"><span class="text-button">Отправить</span></button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
